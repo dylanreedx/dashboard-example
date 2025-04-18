@@ -1,30 +1,19 @@
-# dashboard-01
+# Dashboard Example w/ Next.js, TypeScript, shadcn/ui
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
+## Get started
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/test-4d682361/v0-dashboard-01)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/jscrOTysVbG)
+1. Run `npm i` in root directory to install dependencies.
+2. Run `npm run dev` to start dev server (w/ hot reoading ofc)
 
-## Overview
+## Routing
 
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
+Simply add files by creating a directory in `/app` with your desired route name and creating a `page.tsx` file in the new directory.
+Find out more here: https://nextjs.org/docs/app/building-your-application/routing
 
-## Deployment
+## Styling
 
-Your project is live at:
+We are using Tailwind and Radix UI under the hood with Shadcn/ui. Tailwind is a game changer when writing CSS, may look ugly initially but saves so much time.
 
-**[https://vercel.com/test-4d682361/v0-dashboard-01](https://vercel.com/test-4d682361/v0-dashboard-01)**
+Shadcn/ui just took the primatives from Radix UI (unstyled but highly accessible components) and styled them. You can add components or even whole "blocks" or templates with commands (i.e. `npx shadcn@latest add button` or `npx shadcn@latest add login-01`)
 
-## Build your app
-
-Continue building your app on:
-
-**[https://v0.dev/chat/projects/jscrOTysVbG](https://v0.dev/chat/projects/jscrOTysVbG)**
-
-## How It Works
-
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+Again, TailwindCSS is being used under the hood with that comes a robust styling system to manage your themes and colors (`tailwind.config.js`)
